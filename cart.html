@@ -12,7 +12,23 @@
     <nav class="fixed top-0 left-0 right-0 z-50 glass shadow-sm">
         <div class="container mx-auto px-6 py-4 flex items-center justify-between font-bold">
             <a href="index.html" class="text-2xl font-extrabold tracking-tighter">Ecoosoft<span class="text-sky-500">Store</span></a>
-            <a href="products.html" class="text-slate-600 hover:text-sky-600 transition-colors">Back to Shop</a>
+            <div class="flex items-center gap-6">
+                <a href="products.html" class="text-slate-600 hover:text-sky-600 transition-colors">Back to Shop</a>
+                <button id="menu-btn" class="md:hidden text-slate-600">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu" class="fixed inset-0 bg-slate-900/95 z-[100] flex flex-col items-center justify-center space-y-8 text-2xl font-black text-white hidden">
+            <button id="close-menu" class="absolute top-8 right-8 text-white/50 hover:text-white">
+                <i data-lucide="x" size="32"></i>
+            </button>
+            <a href="index.html" class="hover:text-sky-400 transition-colors">Home</a>
+            <a href="products.html" class="hover:text-sky-400 transition-colors">Products</a>
+            <a href="about.html" class="hover:text-sky-400 transition-colors">About</a>
+            <a href="contact.html" class="hover:text-sky-400 transition-colors">Contact</a>
         </div>
     </nav>
 

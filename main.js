@@ -2,32 +2,72 @@
 const products = [
     {
         id: '1',
-        name: 'ecoosoft 14 LEDs 3 m Yellow Steady Clip Rice Lights',
+        name: 'Ecoosoft 14 LEDs 3 m Yellow Steady Clip Rice Lights',
         price: 159,
-        description: '3 meter warm yellow decorative clip lights. Energy efficient, durable, and perfect for creating a cozy atmosphere in bedrooms or for festive occasions.',
-        image: 'https://rukminim2.flixcart.com/image/416/416/xif0q/decorative-light/h/k/i/14-led-rice-lights-3-meter-warm-yellow-clip-lights-pack-of-1-vsh-original-imagp5z9sz8gzmhh.jpeg',
+        description: 'Pack of 1 | Sales Package: 1 Led light with Transparent Clip | Brand: ecoosoft | Model Number: 14 LED 3m Yellow Clip Light | Color: Yellow | Length: 3 m | Multi-Functions: Steady | Number of Bulbs: 14',
+        image: 'https://rukminim2.flixcart.com/image/1536/1536/xif0q/rice-light/1/v/r/14-clip-3-1-14-led-3m-yellow-clip-light-ecoosoft-original-imahhxhbef5whqyp.jpeg?q=90',
+        images: [
+            'https://rukminim2.flixcart.com/image/1536/1536/xif0q/rice-light/1/v/r/14-clip-3-1-14-led-3m-yellow-clip-light-ecoosoft-original-imahhxhbef5whqyp.jpeg?q=90',
+            'https://rukminim2.flixcart.com/image/1536/1536/xif0q/rice-light/0/u/u/14-clip-3-1-14-led-3m-yellow-clip-light-ecoosoft-original-imahhxhbx7zmb3a5.jpeg?q=90',
+            'https://rukminim2.flixcart.com/image/1536/1536/xif0q/rice-light/t/u/7/14-clip-3-1-14-led-3m-yellow-clip-light-ecoosoft-original-imahhxhajqyahspe.jpeg?q=90',
+            'https://rukminim2.flixcart.com/image/1536/1536/xif0q/rice-light/c/x/i/14-clip-3-1-14-led-3m-yellow-clip-light-ecoosoft-original-imahhxhbabrtv8yr.jpeg?q=90',
+            'https://rukminim2.flixcart.com/image/1536/1536/xif0q/rice-light/b/w/a/14-clip-3-1-led-photo-clip-string-lights-warm-white-for-original-imahjzc8afhj65fw.jpeg?q=90',
+            'https://rukminim2.flixcart.com/image/1536/1536/xif0q/rice-light/p/x/w/20-clip-3-6-1-k-d-20-leds-3-06-m-yellow-steady-clip-rice-lights-original-imah4yhdhcgt6ffy.jpeg?q=90',
+            'https://rukminim2.flixcart.com/image/1536/1536/xif0q/rice-light/m/n/9/14-clip-3-1-14-led-3m-yellow-clip-light-ecoosoft-original-imahhxhbqtd3wnfs.jpeg?q=90'
+        ],
         category: 'Lights',
         flipkartLink: 'https://dl.flipkart.com/s/sSy8MwuuuN',
         featured: true
     },
     {
         id: '2',
-        name: 'Panda Night Lamp',
+        name: 'Ecoosoft Silicon Panda Table Lamp, USB Rechargeable Night Lamp',
         price: 480,
-        description: 'USB rechargeable silicone cute panda lamp. Soft touch, multi-color breathing mode, and long battery life. Ideal gift for kids and room decoration.',
-        image: 'https://rukminim2.flixcart.com/image/416/416/xif0q/night-lamp/q/t/e/rechargeable-cute-panda-silicone-night-light-portable-soft-original-imagvwyhgnczzzzg.jpeg',
+        description: 'Brand: ecoosoft | Model Number: Silicon panda lamp multi | Color: Multicolor | Brand Color: Multicolor | Model Name: Silicon Panda Table Lamp, USB Rechargeable night lamp, Table Lamp | Assembly Required: No | Usage: Decorative',
+        image: 'https://rukminim2.flixcart.com/image/1536/1536/xif0q/table-lamp/z/l/a/silicon-panda-table-lamp-usb-rechargeable-night-lamp-table-lamp-original-imahhxh3rmfr2rrf.jpeg?q=90',
+        images: [
+            'https://rukminim2.flixcart.com/image/1536/1536/xif0q/table-lamp/z/l/a/silicon-panda-table-lamp-usb-rechargeable-night-lamp-table-lamp-original-imahhxh3rmfr2rrf.jpeg?q=90',
+            'https://rukminim2.flixcart.com/image/1536/1536/xif0q/table-lamp/z/x/e/silicon-panda-table-lamp-usb-rechargeable-night-lamp-table-lamp-original-imahhxh3cdzdbxj9.jpeg?q=90',
+            'https://rukminim2.flixcart.com/image/1536/1536/xif0q/table-lamp/d/8/p/silicon-panda-table-lamp-usb-rechargeable-night-lamp-table-lamp-original-imahhxh3hzmhbbau.jpeg?q=90',
+            'https://rukminim2.flixcart.com/image/1536/1536/xif0q/table-lamp/k/k/6/silicon-panda-table-lamp-usb-rechargeable-night-lamp-table-lamp-original-imahhxh3mh4sg86x.jpeg?q=90',
+            'https://rukminim2.flixcart.com/image/1536/1536/xif0q/table-lamp/c/s/u/silicon-panda-table-lamp-usb-rechargeable-night-lamp-table-lamp-original-imahhxh3vcgntawm.jpeg?q=90'
+        ],
         category: 'Lamps',
         flipkartLink: 'https://dl.flipkart.com/s/bmPLfUNNNN',
         featured: true
     },
     {
         id: '3',
-        name: 'Sunset Projection Lamp',
+        name: 'Ecoosoft Sunset Projection Lamp For Decoration Romantic LED Night Light',
         price: 395,
-        description: 'Romantic LED sunset projection lamp. Create a stunning aesthetic atmosphere for photography, bedroom decor, or relaxing evenings. 180-degree rotation.',
-        image: 'https://rukminim2.flixcart.com/image/416/416/xif0q/night-lamp/g/l/f/sunset-projection-lamp-romantic-led-night-light-for-photography-original-imagmhzffzhuzzzh.jpeg',
+        description: 'Sales Package: 1 Sunset lamp with 1 remote control | Brand: ecoosoft | Model Number: Romantic 16-color changing LED atmosphere light with remote control | Color: Multicolor | Model Name: Sunset Lamp Projection Lamp For Decoration Romantic LED Night Light | Assembly Required: Yes | Usage: Decorative',
+        image: 'https://rukminim1.flixcart.com/image/1536/1536/xif0q/table-lamp/3/n/w/16-color-rgb-sunset-projection-lamp-remote-control-led-mood-ligh-original-imahgehvn7t9y7zz.jpeg?q=90',
+        images: [
+            'https://rukminim1.flixcart.com/image/1536/1536/xif0q/table-lamp/3/n/w/16-color-rgb-sunset-projection-lamp-remote-control-led-mood-ligh-original-imahgehvn7t9y7zz.jpeg?q=90',
+            'https://rukminim1.flixcart.com/image/1536/1536/xif0q/table-lamp/1/2/u/sunset-lamp-projection-lamp-night-lamp-night-light-sunset-original-imahkwrtdvmzxhbt.jpeg?q=90',
+            'https://rukminim1.flixcart.com/image/1536/1536/xif0q/table-lamp/v/t/r/sunset-lamp-projection-lamp-night-light-romantic-16-colors-original-imahgh3yvy4mzufy.jpeg?q=90',
+            'https://rukminim1.flixcart.com/image/1536/1536/xif0q/table-lamp/a/d/o/sunset-lamp-projection-lamp-night-lamp-night-light-sunset-original-imahkwrtws4v6vxu.jpeg?q=90',
+            'https://rukminim1.flixcart.com/image/1536/1536/xif0q/table-lamp/f/t/k/sunset-lamp-projection-led-light-with-usb-remote-rainbow-original-imahgy2vxzhrr6zs.jpeg?q=90'
+        ],
         category: 'Lamps',
         flipkartLink: 'https://dl.flipkart.com/s/sS2o3iuuuN',
+        featured: true
+    },
+    {
+        id: '4',
+        name: 'Ecoosoft Silicon Scrubber Cleaning Gloves for Kitchen',
+        price: 199,
+        description: 'Sales Package: One pair Silicon gloves | Pack of: 1 | Brand: ecoosoft | Model Name: silicon scrubber cleaning gloves for kitchen | Model Number: silicon scrubrr cleaning gloves for kitchen | Type: Glove Set | Usage Type: Wet and Dry | Size: Medium',
+        image: 'https://rukminim2.flixcart.com/image/1536/1536/xif0q/cleaning-glove/v/a/d/1-silicon-scrubrr-cleaning-gloves-for-kitchen-anti-slip-original-imahmdgsvgeueafp.jpeg?q=90',
+        images: [
+            'https://rukminim2.flixcart.com/image/1536/1536/xif0q/cleaning-glove/v/a/d/1-silicon-scrubrr-cleaning-gloves-for-kitchen-anti-slip-original-imahmdgsvgeueafp.jpeg?q=90',
+            'https://rukminim2.flixcart.com/image/1536/1536/xif0q/cleaning-glove/0/u/z/1-silicon-scrubrr-cleaning-gloves-for-kitchen-anti-slip-original-imahmdgswmkzxwug.jpeg?q=90',
+            'https://rukminim2.flixcart.com/image/1536/1536/xif0q/cleaning-glove/c/b/i/1-silicon-scrubrr-cleaning-gloves-for-kitchen-anti-slip-original-imahmdgszncekgka.jpeg?q=90',
+            'https://rukminim2.flixcart.com/image/1536/1536/xif0q/cleaning-glove/j/g/v/1-silicon-scrubrr-cleaning-gloves-for-kitchen-anti-slip-original-imahmdgsbpcg8n6a.jpeg?q=90',
+            'https://rukminim2.flixcart.com/image/1536/1536/xif0q/cleaning-glove/5/0/0/1-silicon-scrubrr-cleaning-gloves-for-kitchen-anti-slip-original-imahmdgs9cx29bbg.jpeg?q=90'
+        ],
+        category: 'Kitchen',
+        flipkartLink: '#',
         featured: true
     }
 ];
@@ -105,4 +145,23 @@ function renderFeaturedProducts() {
 document.addEventListener('DOMContentLoaded', () => {
     updateCartCount();
     renderFeaturedProducts();
+
+    // Mobile Menu Logic
+    const menuBtn = document.getElementById('menu-btn');
+    const closeBtn = document.getElementById('close-menu');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('hidden');
+            document.body.style.overflow = 'hidden'; // Prevent scroll
+        });
+    }
+
+    if (closeBtn && mobileMenu) {
+        closeBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            document.body.style.overflow = 'auto'; // Restore scroll
+        });
+    }
 });

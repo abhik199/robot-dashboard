@@ -28,7 +28,21 @@
                     <i data-lucide="shopping-cart"></i>
                     <span id="cart-count" class="absolute -top-2 -right-2 bg-sky-500 text-white text-[10px] font-bold w-5 h-5 flex items-center justify-center rounded-full">0</span>
                 </a>
+                <button id="menu-btn" class="md:hidden text-slate-600">
+                    <i data-lucide="menu"></i>
+                </button>
             </div>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu" class="fixed inset-0 bg-slate-900/95 z-[100] flex flex-col items-center justify-center space-y-8 text-2xl font-black text-white hidden">
+            <button id="close-menu" class="absolute top-8 right-8 text-white/50 hover:text-white">
+                <i data-lucide="x" size="32"></i>
+            </button>
+            <a href="index.html" class="hover:text-sky-400 transition-colors">Home</a>
+            <a href="products.html" class="hover:text-sky-400 transition-colors">Products</a>
+            <a href="about.html" class="hover:text-sky-400 transition-colors">About</a>
+            <a href="contact.html" class="hover:text-sky-400 transition-colors">Contact</a>
         </div>
     </nav>
 

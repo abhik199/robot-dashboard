@@ -18,6 +18,21 @@
                 <a href="about.html" class="hover:text-sky-600 transition-colors">About</a>
                 <a href="contact.html" class="text-sky-600">Contact</a>
             </div>
+            
+            <button id="menu-btn" class="md:hidden text-slate-600">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu" class="fixed inset-0 bg-slate-900/95 z-[100] flex flex-col items-center justify-center space-y-8 text-2xl font-black text-white hidden">
+            <button id="close-menu" class="absolute top-8 right-8 text-white/50 hover:text-white">
+                <i data-lucide="x" size="32"></i>
+            </button>
+            <a href="index.html" class="hover:text-sky-400 transition-colors">Home</a>
+            <a href="products.html" class="hover:text-sky-400 transition-colors">Products</a>
+            <a href="about.html" class="hover:text-sky-400 transition-colors">About</a>
+            <a href="contact.html" class="hover:text-sky-400 transition-colors">Contact</a>
         </div>
     </nav>
 
@@ -31,15 +46,15 @@
                     <div class="space-y-8">
                         <div>
                             <p class="text-slate-400 font-bold uppercase text-xs mb-2">Our Address</p>
-                            <p class="text-xl font-bold">Huzurganj, Madhya Pradesh, India</p>
+                            <p class="text-xl font-bold">Nanda Nagar Indore, Madhya Pradesh</p>
                         </div>
                         <div>
                             <p class="text-slate-400 font-bold uppercase text-xs mb-2">Phone</p>
-                            <p class="text-xl font-bold">+91 8461003767</p>
+                            <p class="text-xl font-bold">+91 8818810923</p>
                         </div>
                         <div>
                             <p class="text-slate-400 font-bold uppercase text-xs mb-2">Email</p>
-                            <p class="text-xl font-bold">support@ecoosoftstore.com</p>
+                            <p class="text-xl font-bold">ecoosoft@gmail.com</p>
                         </div>
                     </div>
                 </div>
@@ -47,7 +62,7 @@
                     <form onsubmit="event.preventDefault(); alert('Message sent successfully!'); this.reset();" class="space-y-6">
                         <div>
                             <label class="block font-bold text-slate-900 mb-2">Full Name</label>
-                            <input type="text" placeholder="Abhishek Kirar" required class="w-full bg-slate-50 border border-slate-100 rounded-2xl py-4 px-6 focus:outline-none focus:ring-2 focus:ring-sky-500 font-medium">
+                            <input type="text" placeholder="Akash Bawankar" required class="w-full bg-slate-50 border border-slate-100 rounded-2xl py-4 px-6 focus:outline-none focus:ring-2 focus:ring-sky-500 font-medium">
                         </div>
                         <div>
                             <label class="block font-bold text-slate-900 mb-2">Message</label>

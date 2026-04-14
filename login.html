@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login | EcoosoftStore</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-slate-900 flex items-center justify-center min-h-screen">
+    
+    <div class="w-full max-w-md p-8">
+        <div class="text-center mb-10">
+            <h1 class="text-3xl font-black text-white mb-2">Admin <span class="text-sky-500">Access</span></h1>
+            <p class="text-slate-400 font-medium">Enter your credentials to manage the store</p>
+        </div>
+
+        <div class="bg-white/5 backdrop-blur-xl p-8 rounded-[40px] border border-white/10 shadow-2xl">
+            <form id="login-form" class="space-y-6">
+                <div>
+                    <label class="block text-slate-400 font-bold mb-2 text-sm uppercase tracking-widest">Username</label>
+                    <input type="text" id="username" required class="w-full bg-white/5 border border-white/10 rounded-2xl py-4 px-6 text-white focus:outline-none focus:ring-2 focus:ring-sky-500 font-medium placeholder-white/20" placeholder="Store ID">
+                </div>
+                <div>
+                    <label class="block text-slate-400 font-bold mb-2 text-sm uppercase tracking-widest">Password</label>
+                    <input type="password" id="password" required class="w-full bg-white/5 border border-white/10 rounded-2xl py-4 px-6 text-white focus:outline-none focus:ring-2 focus:ring-sky-500 font-medium placeholder-white/20" placeholder="••••••••">
+                </div>
+                <button type="submit" class="w-full bg-sky-500 text-white py-5 rounded-2xl font-black text-lg hover:bg-sky-600 transition-all shadow-xl shadow-sky-500/20 active:scale-95">
+                    Sign In
+                </button>
+            </form>
+            <div id="error-msg" class="mt-6 text-red-400 text-center font-bold hidden flex items-center justify-center gap-2">
+                <i data-lucide="alert-circle" size="18"></i> Invalid Credentials
+            </div>
+        </div>
+
+        <a href="index.html" class="mt-8 flex items-center justify-center gap-2 text-slate-500 hover:text-white transition-colors font-bold">
+            <i data-lucide="arrow-left" size="18"></i> Back to Store
+        </a>
+    </div>
+
+    <script>
+        const VALID_USER = "ecoosoft-store";
+        const VALID_PASS = "HFk4Bs7BJGC6Sgfu";
+
+        document.getElementById('login-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const user = document.getElementById('username').value;
+            const pass = document.getElementById('password').value;
+            const error = document.getElementById('error-msg');
+
+            if (user === VALID_USER && pass === VALID_PASS) {
+                localStorage.setItem('ecoAdmin', 'true');
+                alert('Login Successful! Redirecting to dashboard...');
+                // In a real app we'd redirect to admin.html
+                window.location.href = 'index.html'; 
+            } else {
+                error.classList.remove('hidden');
+                setTimeout(() => error.classList.add('hidden'), 3000);
+            }
+        });
+
+        lucide.createIcons();
+    </script>
+</body>
+</html>

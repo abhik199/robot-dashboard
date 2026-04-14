@@ -28,9 +28,24 @@
                     <i data-lucide="shopping-cart"></i>
                     <span id="cart-count" class="absolute -top-2 -right-2 bg-sky-500 text-white text-[10px] font-bold w-5 h-5 flex items-center justify-center rounded-full">0</span>
                 </a>
-                <button class="md:hidden text-slate-600">
+                <button id="menu-btn" class="md:hidden text-slate-600 hover:text-sky-600 transition-colors">
                     <i data-lucide="menu"></i>
                 </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu" class="fixed inset-0 bg-slate-900/95 z-[100] flex flex-col items-center justify-center space-y-8 text-2xl font-black text-white hidden">
+            <button id="close-menu" class="absolute top-8 right-8 text-white/50 hover:text-white">
+                <i data-lucide="x" size="32"></i>
+            </button>
+            <a href="index.html" class="hover:text-sky-400 transition-colors">Home</a>
+            <a href="products.html" class="hover:text-sky-400 transition-colors">Products</a>
+            <a href="about.html" class="hover:text-sky-400 transition-colors">About</a>
+            <a href="contact.html" class="hover:text-sky-400 transition-colors">Contact</a>
+            <div class="pt-8 flex gap-6">
+                <a href="#" class="w-12 h-12 bg-white/10 flex items-center justify-center rounded-xl hover:bg-sky-500 transition-colors"><i data-lucide="instagram"></i></a>
+                <a href="#" class="w-12 h-12 bg-white/10 flex items-center justify-center rounded-xl hover:bg-sky-500 transition-colors"><i data-lucide="facebook"></i></a>
             </div>
         </div>
     </nav>
@@ -126,13 +141,14 @@
                 <div>
                     <h4 class="text-white font-bold mb-6">Contact</h4>
                     <ul class="space-y-4 font-medium">
-                        <li class="flex items-start gap-3"><i data-lucide="map-pin" size="18"></i> Huzurganj, MP, India</li>
-                        <li class="flex items-center gap-3"><i data-lucide="phone" size="18"></i> +91 8461003767</li>
+                        <li class="flex items-start gap-3"><i data-lucide="map-pin" size="18"></i> Nanda Nagar Indore, Madhya Pradesh</li>
+                        <li class="flex items-center gap-3"><i data-lucide="phone" size="18"></i> +91 8818810923</li>
+                        <li class="flex items-center gap-3"><i data-lucide="mail" size="18"></i> ecoosoft@gmail.com</li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="text-white font-bold mb-6">Owner</h4>
-                    <p class="font-bold text-white mb-2">Abhishek Kirar</p>
+                    <p class="font-bold text-white mb-2">Akash Bawankar</p>
                     <div class="flex gap-4 mt-6">
                         <a href="#" class="w-10 h-10 bg-slate-800 flex items-center justify-center rounded-lg hover:bg-sky-500 transition-colors"><i data-lucide="instagram" size="18"></i></a>
                         <a href="#" class="w-10 h-10 bg-slate-800 flex items-center justify-center rounded-lg hover:bg-sky-500 transition-colors"><i data-lucide="facebook" size="18"></i></a>
@@ -146,7 +162,7 @@
     </footer>
 
     <!-- WhatsApp Button -->
-    <a href="https://wa.me/918461003767" class="fixed bottom-8 right-8 bg-green-500 text-white p-4 rounded-full shadow-2xl hover:bg-green-600 transition-all hover:scale-110 z-50">
+    <a href="https://wa.me/918818810923" class="fixed bottom-8 right-8 bg-green-500 text-white p-4 rounded-full shadow-2xl hover:bg-green-600 transition-all hover:scale-110 z-50">
         <i data-lucide="message-circle" size="28"></i>
     </a>
 
