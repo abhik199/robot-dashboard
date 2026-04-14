@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products | EcoosoftStore</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-slate-50">
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="index.html" class="text-2xl font-extrabold tracking-tighter">
+                Ecoosoft<span class="text-sky-500">Store</span>
+            </a>
+            
+            <div class="hidden md:flex items-center space-x-8 font-semibold text-slate-600">
+                <a href="index.html" class="hover:text-sky-600 transition-colors">Home</a>
+                <a href="products.html" class="text-sky-600">Products</a>
+                <a href="about.html" class="hover:text-sky-600 transition-colors">About</a>
+                <a href="contact.html" class="hover:text-sky-600 transition-colors">Contact</a>
+            </div>
+
+            <div class="flex items-center space-x-6">
+                <a href="cart.html" class="relative text-slate-600 hover:text-sky-600 transition-colors">
+                    <i data-lucide="shopping-cart"></i>
+                    <span id="cart-count" class="absolute -top-2 -right-2 bg-sky-500 text-white text-[10px] font-bold w-5 h-5 flex items-center justify-center rounded-full">0</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="pt-32 pb-20">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-8 mb-16">
+                <div>
+                    <h1 class="text-4xl font-black text-slate-900 mb-2">Our Collection</h1>
+                    <p class="text-slate-500 font-medium">Explore premium lighting for your beautiful home</p>
+                </div>
+                <div class="flex items-center gap-4">
+                    <div class="relative">
+                        <i data-lucide="search" class="absolute left-4 top-3.5 text-slate-400" size="20"></i>
+                        <input type="text" placeholder="Search products..." class="pl-12 pr-6 py-3.5 rounded-2xl bg-white border border-slate-200 focus:outline-none focus:ring-2 focus:ring-sky-500 w-full md:w-80 font-medium">
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col lg:flex-row gap-12">
+                <!-- Filters -->
+                <div class="lg:w-1/4">
+                    <div class="bg-white p-8 rounded-[32px] border border-slate-100 shadow-sm sticky top-32">
+                        <h4 class="font-bold text-lg mb-6 flex items-center gap-2">
+                            <i data-lucide="sliders-horizontal" size="20"></i> Filters
+                        </h4>
+                        
+                        <div class="mb-8">
+                            <p class="font-bold text-sm text-slate-400 uppercase tracking-widest mb-4">Categories</p>
+                            <div class="space-y-3">
+                                <label class="flex items-center gap-3 cursor-pointer">
+                                    <input type="checkbox" checked class="w-5 h-5 accent-sky-500">
+                                    <span class="font-bold text-slate-700">All Products</span>
+                                </label>
+                                <label class="flex items-center gap-3 cursor-pointer">
+                                    <input type="checkbox" class="w-5 h-5 accent-sky-500">
+                                    <span class="font-medium text-slate-500">Lamps</span>
+                                </label>
+                                <label class="flex items-center gap-3 cursor-pointer">
+                                    <input type="checkbox" class="w-5 h-5 accent-sky-500">
+                                    <span class="font-medium text-slate-500">Lights</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div>
+                            <p class="font-bold text-sm text-slate-400 uppercase tracking-widest mb-4">Price Range</p>
+                            <input type="range" min="0" max="2000" value="2000" class="w-full h-2 bg-slate-100 rounded-lg appearance-none cursor-pointer accent-sky-500">
+                            <div class="flex justify-between mt-2 text-xs font-bold text-slate-400">
+                                <span>₹0</span>
+                                <span>₹2000+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Grid -->
+                <div class="lg:w-3/4">
+                    <div id="products-grid" class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                        <!-- Products will be injected by script below -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer same as index -->
+    <footer class="bg-slate-900 text-slate-400 py-20">
+        <div class="container mx-auto px-6 text-center border-t border-slate-800 pt-8">
+            <p>&copy; 2026 EcoosoftStore. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        function renderAllProducts() {
+            const container = document.getElementById('products-grid');
+            if (!container) return;
+
+            container.innerHTML = products.map(product => `
+                <div class="product-card glass rounded-[32px] overflow-hidden hover-lift border border-slate-100 group">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="${product.image}" alt="${product.name}" class="product-card-img w-full h-full object-cover">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">${product.name}</h3>
+                        <p class="text-slate-500 text-sm mb-6 line-clamp-2">${product.description}</p>
+                        <div class="flex items-center justify-between mb-8">
+                            <span class="text-2xl font-black text-slate-900">₹${product.price}</span>
+                        </div>
+                        <div class="grid grid-cols-2 gap-3">
+                            <button onclick="addToCart('${product.id}')" class="bg-slate-100 text-slate-900 py-3.5 rounded-xl font-bold hover:bg-slate-200 transition-colors flex items-center justify-center gap-2">
+                                <i data-lucide="shopping-cart" size="18"></i> Add
+                            </button>
+                            <a href="product-details.html?id=${product.id}" class="bg-sky-500 text-white py-3.5 rounded-xl font-bold hover:bg-sky-600 transition-colors flex items-center justify-center shadow-lg shadow-sky-100">
+                                Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+            lucide.createIcons();
+        }
+        document.addEventListener('DOMContentLoaded', renderAllProducts);
+    </script>
+</body>
+</html>
